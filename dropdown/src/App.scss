@@ -1,0 +1,10 @@
+.App-main {
+  padding-top: 25px;
+  max-width: 1440px;
+  width: 50%;
+  margin: auto;
+
+  @media (orientation: portrait) {
+    width: 100%;
+  }
+}
