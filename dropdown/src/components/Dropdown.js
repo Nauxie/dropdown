@@ -52,19 +52,11 @@ function Dropdown({ title, options, multiselect = false }) {
             <li className='options-item' key={option.id}>
               <button type='button' onClick={() => handleClick(option)}>
                 <span>{option.title}</span>
-                {multiselect ? (
-                  <input
-                    type='checkbox'
-                    id={option.id}
-                    checked={isOptionSelected(option)}
-                  />
-                ) : (
-                  <input
-                    type='radio'
-                    id={option.id}
-                    checked={isOptionSelected(option)}
-                  />
-                )}
+                <input
+                  type={multiselect ? 'checkbox' : 'radio'}
+                  id={option.id}
+                  checked={isOptionSelected(option)}
+                />
               </button>
             </li>
           ))}

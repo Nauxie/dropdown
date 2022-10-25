@@ -7,11 +7,11 @@ import data from './data';
 function App() {
   return (
     <div className='App-main'>
-      {data.map((dd) => (
+      {data.map((d) => (
         <Dropdown
-          title={dd.title}
-          options={dd.options}
-          multiselect={dd.multiselect}
+          title={d.title}
+          options={d.options}
+          multiselect={d.multiselect}
         />
       ))}
     </div>
